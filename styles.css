@@ -1,0 +1,136 @@
+:root {
+  --primary-font: "Tilt Neon", cursive;
+  --secondary-font: "Lora", serif;
+  --primary-color: #e2dedc;
+  --secondary-color: #e5bea1;
+  --tertiary-color: #525058;
+}
+
+.theme-button {
+  display: block;
+  margin: 40px auto;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: blanchedalmond;
+  background-color: chocolate;
+  transition: all 150ms ease-in-out;
+  font-family: var(--primary-font);
+}
+.theme-button:hover {
+  color: chocolate;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: bisque;
+  padding: 120px;
+  border-radius: 10px;
+}
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: var(--primary-font);
+  font-size: 86px;
+  text-align: center;
+  margin: 20px auto 0px auto;
+}
+h2 {
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 46px;
+  margin: 0px auto 40px auto;
+}
+
+p {
+  text-align: justify;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+}
+
+.soymilk-intro-image {
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+.soymilk-intro-image:hover {
+  transform: scale(1.1);
+  filter: contrast(60%);
+}
+.buyButton {
+  display: block;
+  margin: 20px auto;
+  color: chocolate;
+  background-color: blanchedalmond;
+  border-radius: 3px;
+  border-color: chocolate;
+  padding: 6px 5px;
+  transition: all 150ms ease-in-out;
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+.buyButton:hover {
+  color: blanchedalmond;
+  background-color: chocolate;
+  cursor: pointer;
+}
+
+.dark {
+  background: linear-gradient(
+    178.6deg,
+    rgb(20, 36, 50) 11.8%,
+    rgb(124, 143, 161) 83.8%
+  );
+  color: antiquewhite;
+}
+
+.dark .container {
+  background: rgba(255, 221, 136, 0.28);
+}
+
+.grid {
+  display: grid;
+  margin: 10px 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+
+.grid img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+  font-family: var(--primary-font);
+}
+
+footer a {
+  font-family: var(--primary-font);
+}
