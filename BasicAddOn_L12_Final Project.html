@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🥛Soy Milk - The Holy Drink</title>
+    <button class="theme-button">Dark Theme</button>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        44.8deg,
+        rgba(255, 136, 102, 0.67) -53.1%,
+        rgba(255, 221, 136, 0.28) 49%
+      );
+    }
+
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    .soymilk-intro-image {
+      border-radius: 10px;
+      transition: all 150ms ease-in-out;
+    }
+
+    .soymilk-intro-image:hover {
+      transform: scale(1.1);
+      filter: contrast(60%);
+    }
+    .buyButton {
+      display: block;
+      margin: 0 auto;
+      color: chocolate;
+      background-color: blanchedalmond;
+      border-radius: 3px;
+      border-color: chocolate;
+      padding: 6px 5px;
+      transition: all 150ms ease-in-out;
+    }
+    .buyButton:hover {
+      color: blanchedalmond;
+      background-color: chocolate;
+      cursor: pointer;
+    }
+    .theme-button {
+      display: block;
+      margin: 0 auto;
+      padding: 3px 5px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: blanchedalmond;
+      background-color: chocolate;
+      transition: all 150ms ease-in-out;
+    }
+    .theme-button:hover {
+      color: chocolate;
+      background-color: blanchedalmond;
+      cursor: pointer;
+    }
+
+    .dark {
+      background: linear-gradient(
+        178.6deg,
+        rgb(20, 36, 50) 11.8%,
+        rgb(124, 143, 161) 83.8%
+      );
+      color: antiquewhite;
+    }
+
+    .dark .container {
+      background: rgba(255, 221, 136, 0.28);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: bisque;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+    .grid {
+      display: grid;
+      margin: 10px 0;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
+      transition: all 150ms ease-in-out;
+    }
+
+    .grid img:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      text-align: center;
+      margin: 10px;
+      font-size: 18px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>Soy Milk</h1>
+      <h2>The Holy Drink</h2>
+      <a href="https://en.wikipedia.org/wiki/Soy_milk" target="_blank">
+        <img
+          class="soymilk-intro-image"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/690/original/mae-mu-3d4VRbKaYBE-unsplash.jpg?1669739618"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/781/original/soya-1.jpg?1669799787"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/782/original/soya-2.jpg?1669799794"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/783/original/soya-3.jpg?1669799800"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/784/original/soya-4.jpg?1669799808"
+        />
+      </div>
+      <p>
+        Soy milk (simplified Chinese: 豆浆; traditional Chinese: 豆漿) also
+        known as soya milk or soymilk, is a plant-based drink produced by
+        soaking and grinding soybeans, boiling the mixture, and filtering out
+        remaining particulates. It is a stable emulsion of oil, water, and
+        protein. Its original form is an intermediate product of the manufacture
+        of tofu. Originating in China, it became a common beverage in Europe and
+        North America in the latter half of the 20th century, especially as
+        production techniques were developed to give it a taste and consistency
+        more closely resembling that of dairy milk. Soy milk may be used as a
+        substitute for dairy milk by individuals who are vegan or are lactose
+        intolerant.
+      </p>
+      🧐<a href="https://en.wikipedia.org/wiki/Soy_milk" target="_blank"
+        >Read more on wiki</a
+      >
+
+      <button class="buyButton">Buy Soy Milk</button>
+    </div>
+
+    <footer>
+      Coded with 💛 by Chiao on
+      <a href="http://shecodes.io" target="_blank">shecodes.io</a>
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      function buySoyMilk() {
+        let firstName = prompt("What's your first name?");
+        let bottles = prompt("How many bottles would you like?");
+        let cellNumber = prompt("What's your cellphone number?");
+
+        alert("Great! Thank you, " + firstName + "! ");
+      }
+
+      let buyButton = document.querySelector(".buyButton");
+      buyButton.addEventListener("click", buySoyMilk);
+    </script>
+  </body>
+</html>
