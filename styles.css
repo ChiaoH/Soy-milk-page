@@ -114,7 +114,8 @@ a {
 
 .dark h1,
 .dark h2,
-.dark p {
+.dark p,
+.dark footer {
   color: var(--primary-color);
 }
 
