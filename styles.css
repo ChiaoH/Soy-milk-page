@@ -9,34 +9,38 @@
 .theme-button {
   display: block;
   margin: 40px auto;
-  padding: 3px 5px;
+  padding: 8px 10px;
   border-radius: 4px;
   font-size: 16px;
-  color: blanchedalmond;
-  background-color: chocolate;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
   transition: all 150ms ease-in-out;
   font-family: var(--primary-font);
 }
+
 .theme-button:hover {
-  color: chocolate;
-  background-color: blanchedalmond;
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
   cursor: pointer;
+}
+.theme-button:visited {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border: none;
 }
 
 body {
-  background: linear-gradient(
-    44.8deg,
-    rgba(255, 136, 102, 0.67) -53.1%,
-    rgba(255, 221, 136, 0.28) 49%
-  );
+  background: var(--primary-color);
 }
 
 .container {
   max-width: 800px;
   margin: 20px auto;
-  background-color: bisque;
-  padding: 120px;
+  padding: 60px;
   border-radius: 10px;
+  background: #e5bea180;
 }
 img {
   max-width: 100%;
@@ -46,13 +50,16 @@ h1 {
   font-family: var(--primary-font);
   font-size: 86px;
   text-align: center;
-  margin: 20px auto 0px auto;
+  margin: 0px auto 0px auto;
+  color: var(--tertiary-color);
 }
 h2 {
   text-align: center;
   font-family: var(--secondary-font);
-  font-size: 46px;
+  font-size: 36px;
   margin: 0px auto 40px auto;
+  color: var(--tertiary-color);
+  opacity: 0.8;
 }
 
 p {
@@ -60,6 +67,7 @@ p {
   font-family: var(--secondary-font);
   font-size: 18px;
   line-height: 1.5;
+  color: var(--tertiary-color);
 }
 
 a {
@@ -78,33 +86,57 @@ a {
 }
 .buyButton {
   display: block;
-  margin: 20px auto;
-  color: chocolate;
-  background-color: blanchedalmond;
+  margin: 40px auto 0px auto;
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
   border-radius: 3px;
-  border-color: chocolate;
-  padding: 6px 5px;
+  padding: 8px 10px;
   transition: all 150ms ease-in-out;
   font-family: var(--primary-font);
   font-size: 16px;
 }
 .buyButton:hover {
-  color: blanchedalmond;
-  background-color: chocolate;
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
   cursor: pointer;
 }
 
 .dark {
-  background: linear-gradient(
-    178.6deg,
-    rgb(20, 36, 50) 11.8%,
-    rgb(124, 143, 161) 83.8%
-  );
-  color: antiquewhite;
+  background: var(--tertiary-color);
 }
 
 .dark .container {
-  background: rgba(255, 221, 136, 0.28);
+  background: #9c836f;
+  color: var(--primary-color);
+}
+
+.dark h1,
+.dark h2,
+.dark p {
+  color: var(--primary-color);
+}
+
+.dark .theme-button {
+  display: block;
+  margin: 40px auto;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+
+  border: 1px solid var(--primary-color);
+  transition: all 150ms ease-in-out;
+  font-family: var(--primary-font);
+}
+
+.theme-button:hover {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
 }
 
 .grid {
@@ -121,7 +153,7 @@ a {
 }
 
 .grid img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 footer {
